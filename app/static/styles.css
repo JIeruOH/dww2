@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#chartsContainer {
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.chart-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    height:280px;
+}
+
+.chart-wrapper canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+#trafficListContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#trafficListContainer h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.traffic-item {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.traffic-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.traffic-item.suspicious {
+    border-left: 4px solid #ff0000;
+}
+
+.traffic-item.normal {
+    border-left: 4px solid #00ff00;
+}
+
+.traffic-ip {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.traffic-location {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.traffic-time {
+    font-size: 0.8em;
+    opacity: 0.6;
+    text-align: right;
+}
+

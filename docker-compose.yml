@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  server:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+    restart: always
+
+  sender:
+    build: .
+    command: python send.py
+    depends_on:
+      - server
+    volumes:
+      - ./app:/app
