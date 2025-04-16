@@ -1,4 +1,4 @@
-# big-data-assignment2-2025
+# Data Wrangling and Visualization Assignment2
 
 # How to run
 ## Step 1: Install prerequisites
@@ -8,3 +8,4 @@
 ```bash
 docker compose up 
 ```
+## Step 3: follow the link
