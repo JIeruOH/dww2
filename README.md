@@ -8,4 +8,4 @@
 ```bash
 docker compose up 
 ```
-## Step 3: follow the link
+## Step 3: Follow the link
